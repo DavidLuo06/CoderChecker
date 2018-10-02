@@ -1,3 +1,5 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -9,11 +11,76 @@ public class Test {
     public static Date dNow = new Date( );
     public static SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd");
     public static void main(String[] args) {
-        boolean flag=true;
-        if (true){
+
+        //Bugs 2.  Comparison of String objects using == or !=.
+        String a="a";
+        String b="b";
+        System.out.println(a==b);
+        System.out.println(a!=b);
+
+        //Bugs 3. Method may fail to close stream on exception.
+        FileInputStream fileInputStream =null;
+        FileInputStream errorFileInputStream =null;
+        try {
+            fileInputStream=new FileInputStream("Test.java");
+            errorFileInputStream = new FileInputStream("Not-Exist-file.java");
+            fileInputStream.close();
+            errorFileInputStream.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        //Bugs 4. Condition has no effect.
+        if(true){
             System.out.println(ft.format(dNow));
+        }
+        boolean flag=true;
+        if (flag){
+            System.out.println(ft.format(dNow));
+        }
+
+        // Bugs 5. Inadequate logging information in catch blocks.
+        try {
+            fileInputStream=new FileInputStream("Test.java");
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }catch (FileNotFoundException e){
+            e.printStackTrace();
+        }
+
+        //Bugs 6.  Unneeded computation in loops
+        for (int i = 0; i < 100; i++){
+            // unneeded computation
+            int r = Math.abs(i);
+            System.out.println(i);
         }
 
     }
 
+    /**
+     * Bugs 1. Class defines equals()
+     * @param obj
+     * @return super method
+     */
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    /**
+     * Bugs 1. Class not defines hashCode()
+     * @return
+     */
+//    @Override
+//    public int hashCode() {
+//        return super.hashCode();
+//    }
+
+    /**
+     * 7. Unused methods.
+     */
+    public void unusedMethod(){
+        System.out.println("unused method");
+    }
 }

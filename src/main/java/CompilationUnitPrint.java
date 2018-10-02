@@ -4,16 +4,18 @@ import com.github.javaparser.ast.ImportDeclaration;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 /**
  * @author i
  * @time 2018.10.1
  */
 public class CompilationUnitPrint {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         //creates   file input stream for the file to upload
+        FileInputStream fileInputStream =null;
         try {
-            FileInputStream fileInputStream = new FileInputStream("Test.java");
+            fileInputStream = new FileInputStream("Test.java");
             CompilationUnit compilationUnit = JavaParser.parse(fileInputStream);
             System.out.println(compilationUnit.toString());
             System.out.println("=======import ========");
@@ -28,6 +30,9 @@ public class CompilationUnitPrint {
             e.printStackTrace();
         } finally {
             //close inputStream
+            if(fileInputStream!=null){
+                fileInputStream.close();
+            }
         }
     }
 }
