@@ -43,7 +43,7 @@ public class Test {
         try {
             fileInputStream=new FileInputStream("Test.java");
 
-        }catch (Exception e){
+        }catch (Exception e) {
             e.printStackTrace();
         }catch (FileNotFoundException e){
             e.printStackTrace();
