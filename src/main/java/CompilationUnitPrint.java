@@ -13,7 +13,7 @@ public class CompilationUnitPrint {
     public static void main(String[] args) {
         //creates   file input stream for the file to upload
         try {
-            FileInputStream fileInputStream = new FileInputStream("test.java");
+            FileInputStream fileInputStream = new FileInputStream("Test.java");
             CompilationUnit compilationUnit = JavaParser.parse(fileInputStream);
             System.out.println(compilationUnit.toString());
             System.out.println("=======import ========");
