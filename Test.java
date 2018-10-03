@@ -55,6 +55,12 @@ public class Test {
             int r = Math.abs(i);
             System.out.println(i);
         }
+        // Bugs 8. Empty exception.
+
+        // Bugs 9. Unfinished exception handling code
+        // TODO: something
+        // FIXME
+        // Bugs 10. Over-catching an exception with system-termination
 
     }
 
@@ -83,4 +89,5 @@ public class Test {
     public void unusedMethod(){
         System.out.println("unused method");
     }
+
 }
