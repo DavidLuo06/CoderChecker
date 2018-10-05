@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class CheckRunner {
     static ArrayList<String>filenameList = new ArrayList<>();
     static Scanner fileEntry = new Scanner(System.in);
-    public static void main(String[]args) {
+    public static void main() {
         String progLineCurrent;
         String outputFileName = "StyleCheckResults.txt";
         int lineIndexer = 0;
@@ -58,8 +58,8 @@ public class CheckRunner {
                     bug1Checker.getError(progLineCurrent,lineIndexer,lineNum);
                     bug2Checker.getError(progLineCurrent,lineIndexer,lineNum);
                     bug3Checker.getError(progLineCurrent, lineIndexer, lineNum);
-                    bug5Checker.getError(progLineCurrent, lineNum);
-                    bug6Checker.getError(progLineCurrent, lineNum);
+                    bug5Checker.getError(progLineCurrent, lineIndexer,lineNum);
+                    bug6Checker.getError(progLineCurrent, lineIndexer,lineNum);
                     bug7Checker.getError(progLineCurrent,lineIndexer,lineNum);
                     bug8Checker.getError(progLineCurrent,lineIndexer,lineNum);
                     bug9Checker.getError(progLineCurrent,lineIndexer,lineNum);

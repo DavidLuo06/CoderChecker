@@ -1,2 +1,18 @@
 rootProject.name = 'java'
 
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "gradle.plugin.com.github.spotbugs:spotbugs-gradle-plugin:1.6.4"
+    }
+}
+
+apply plugin: "com.github.spotbugs"
+
+spotbugs {
+    toolVersion = '3.1.3'
+}
