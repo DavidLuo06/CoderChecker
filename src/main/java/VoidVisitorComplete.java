@@ -13,7 +13,6 @@ import com.github.javaparser.ast.stmt.IfStmt;
 import com.github.javaparser.ast.visitor.VoidVisitor;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.printer.JsonPrinter;
-import javassist.compiler.ast.Variable;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
