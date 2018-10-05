@@ -5,51 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7e0b4d8-3aed-4e50-95f9-0f69f4edc651" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/CatchBlockLoggingChecker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/CheckRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ClassHashCodeChecker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ConditionChecker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/EmptyExceptionChecker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/GetAllMethod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/LoopsChecker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MethodCloseStreamChecker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/OverCatchingChecker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/StringComparisonChecker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/StyleChecker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/UnfinishedExceptionChecker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/UnusedMethodChecker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/VoidVisitorComplete$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/VoidVisitorComplete$ExpressEqualsCollector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/VoidVisitorComplete$FieldCollector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/VoidVisitorComplete$MethodNameCollector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/VoidVisitorComplete$MethodVisitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/VoidVisitorComplete$VariableDeclarationExprCollector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/VoidVisitorComplete.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CatchBlockLoggingChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/CatchBlockLoggingChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CheckRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/CheckRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ClassHashCodeChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/ClassHashCodeChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConditionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/ConditionChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmptyExceptionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/EmptyExceptionChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GetAllMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/GetAllMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoopsChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/LoopsChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MethodCloseStreamChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/MethodCloseStreamChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OverCatchingChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/OverCatchingChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StringComparisonChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/StringComparisonChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StyleChecker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UnfinishedExceptionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/UnfinishedExceptionChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UnusedMethodChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/UnusedMethodChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/VoidVisitorComplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/VoidVisitorComplete.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -159,11 +116,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/excludeSpotbugs.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+            <state relative-caret-position="189">
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -177,12 +134,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="189">
-                <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+              <first_editor relative-caret-position="569">
+                <caret line="42" column="2" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
               </first_editor>
               <second_editor />
             </state>
@@ -692,10 +649,10 @@
         <option value="$PROJECT_DIR$/src/test/java/Bug1.java" />
         <option value="$PROJECT_DIR$/src/test/java/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/StyleChecker.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/Test.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/excludeSpotbugs.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -800,7 +757,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538932853780" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538933025520" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -871,18 +828,18 @@
       <option name="presentableId" value="Default" />
       <updated>1538816908476</updated>
       <workItem from="1538816911174" duration="9013000" />
-      <workItem from="1538895958114" duration="25224000" />
+      <workItem from="1538895958114" duration="25460000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34237000" />
+    <option name="totallyTimeSpent" value="34473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1426" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -908,7 +865,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Gradle" order="5" visible="true" weight="0.3298887" />
+      <window_info anchor="right" id="Gradle" order="5" weight="0.3298887" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
@@ -1090,16 +1047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="189">
-            <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -1126,8 +1073,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/excludeSpotbugs.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        <state relative-caret-position="189">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="569">
+            <caret line="42" column="2" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
