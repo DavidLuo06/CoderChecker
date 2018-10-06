@@ -2,6 +2,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.logging.Logger;
 
 /**
  * @author i
@@ -44,9 +45,7 @@ public class Test {
             fileInputStream=new FileInputStream("Test.java");
 
         }catch (Exception e) {
-            e.printStackTrace();
-        }catch (FileNotFoundException e){
-            e.printStackTrace();
+            Logger.getLogger("sssss");
         }
 
         //Bugs 6.  Unneeded computation in loops
@@ -56,12 +55,23 @@ public class Test {
             System.out.println(i);
         }
         // Bugs 8. Empty exception.
+        try {
+            fileInputStream=new FileInputStream("Test.java");
 
+        }catch (Exception e) {
+
+        }
         // Bugs 9. Unfinished exception handling code
         // TODO: something
         // FIXME
         // Bugs 10. Over-catching an exception with system-termination
+        System.exit(0);
+        try {
+            fileInputStream=new FileInputStream("Test.java");
 
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     /**

@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id "com.github.spotbugs" version "1.6.4"
 }
 
 group 'idejie'
@@ -14,4 +15,14 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile 'com.github.javaparser:javaparser-core:3.6.24'
+    compile 'com.github.spotbugs:spotbugs:3.1.7'
+}
+
+tasks.withType(com.github.spotbugs.SpotBugsTask) {
+    excludeFilter = file("$rootProject.projectDir/excludeSpotbugs.xml")
+    reports {
+        xml.enabled false
+        html.enabled true
+        //html.stylesheet resources.text.fromFile("$rootProject.projectDir/standard.xsl")
+    }
 }
