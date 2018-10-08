@@ -3,12 +3,17 @@
 
     <!-- @NonnullByDefault doesn't play nicely with overriding @Nullable parameters/outputs -->
     <Match>
-        <Bug pattern="HE_EQUALS_USE_HASHCODE" />
-        <Bug pattern="ES_COMPARING_PARAMETER_STRING_WITH_EQ" />
-        <Bug pattern="OS_OPEN_STREAM_EXCEPTION_PATH" />
-        <Bug pattern="UC_USELESS_CONDITION" />
-        <Bug pattern="LG_LOST_LOGGER_DUE_TO_WEAK_REFERENCE" />
-        <Bug pattern="UUF_UNUSED_FIELD" />
-        <Bug pattern="DM_RUN_FINALIZERS_ON_EXIT" />
+        <Bug pattern="HE_EQUALS_USE_HASHCODE" /> <!-- bug1 -->
+        <Bug pattern="ES_COMPARING_PARAMETER_STRING_WITH_EQ" /> <!--bug2 -->
+        <Bug pattern="OS_OPEN_STREAM_EXCEPTION_PATH" /> <!-- bug3 -->
+        <Bug pattern="UC_USELESS_CONDITION" /> <!-- bug4 -->
+        <Bug pattern="IMSE_DONT_CATCH_IMSE" /> <!-- bug5-->
+        <Bug pattern="LG_LOST_LOGGER_DUE_TO_WEAK_REFERENCE" /><!-- bug5-->
+        <Bug pattern="SA_LOCAL_SELF_COMPUTATION" /> <!-- bug6-->
+        <Bug pattern="UUF_UNUSED_FIELD" /> <!-- bug7 -->
+        <Bug pattern="FI_FINALIZER_ONLY_NULLS_FIELDS)" /> <!--bug8-->
+        <Bug pattern="DM_RUN_FINALIZERS_ON_EXIT" /> <!--bug9-->
+        <Bug pattern="REC_CATCH_EXCEPTION" /> <!-- bug10 -->
+        <Bug pattern="DM_EXIT" /><!-- bug10 -->
     </Match>
 </FindBugsFilter>
