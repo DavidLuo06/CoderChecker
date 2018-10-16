@@ -1,3 +1,5 @@
+package runner;
+
 import checker.*;
 import com.github.javaparser.JavaParser;
 import com.github.javaparser.ParseProblemException;
@@ -17,8 +19,9 @@ public class CodeChecker {
 
 
         System.out.println("running Code Checker by javaParser..");
-
-        loopFiles("c2");
+        loopFiles("codeSource/hadoop-branch-3.0.0");
+        //loopFiles("codeSource/cloudstack-4.9");
+        //loopFiles("c2");
         BaseChecker.outputFileReport(outputFileName);
 
 
@@ -46,7 +49,7 @@ public class CodeChecker {
                 }
             }
         } else {
-            System.out.println("File not exitst");
+            System.out.println("File not exist!");
         }
     }
 
@@ -68,6 +71,27 @@ public class CodeChecker {
 
         BaseChecker.setCU(unit);
         BaseChecker.setTitle(file.getName());
+        //bug1
+        new HashChecker().parse(adapter);
+        //bug2
+        new StringEqualChecker().parse(adapter);
+        //bug3
+        new FileStreamCloseChecker().parse(adapter);
+        //bug4
+        new IfChecker().parse(adapter);
+        //bug5
+        new LogInfoChecker().parse(adapter);
+        //bug6
+        new LoopChecker().parse(adapter);
+        //bug7
+        new UnusedChecker().parse(adapter);
+        //bug8
+        new EmptyExceptionChecker().parse(adapter);
+        //bug9
+        new UnfinishedExceptionChecker().parse(adapter);
+        //bug10
+        new OverCatchExceptionChecker().parse(adapter);
+
 
     }
 
