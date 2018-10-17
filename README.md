@@ -2,14 +2,32 @@
 > a java code static analysis tools 
 
 - **Build Tools**:    gradle
-- **dependencies**: javaparser / jdt /junit
+- **dependencies**: javaparser / spotbugs
+
 
 ###usage
+- put your project (which needs to static analysis) in `src\main\java`
+- in terminal 
 ```shell
     gradlew check
 ```
-###result
-build/reports/spotbugs/main.xml
+
+### demo
+- a `.java` file where has 10 types bugs in.
+- you just run `gradle check` and will get a result
+### configuration
+in `build.gradle`
+```xml
+tasks.withType(com.github.spotbugs.SpotBugsTask) {
+    excludeFilter = file("$rootProject.projectDir/excludeSpotbugs.xml")
+    reports {
+        xml.enabled false #xml
+        html.enabled true # html
+    }
+}
+```
+###result example
+`main.xml` or `main.html`
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
