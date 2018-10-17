@@ -1,3 +1,5 @@
+package java;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
@@ -10,6 +12,7 @@ import com.github.javaparser.ParseException;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
+
 
 public class GetAllMethod extends VoidVisitorAdapter {
     private CompilationUnit        cu;

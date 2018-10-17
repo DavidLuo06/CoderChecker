@@ -1,3 +1,5 @@
+package java;
+
 public class MethodCloseStreamChecker extends StyleChecker  {
     public void getError(String progLineCurrent, int lineIndexer, int lineNum) {
         errorTrace("Line "+lineNum+": ","Method may fail to close stream on exception. The method creates an IO stream object, does not assign it to\n" +

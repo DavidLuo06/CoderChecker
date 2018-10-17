@@ -1,3 +1,5 @@
+package java;
+
 public class ConditionChecker  extends StyleChecker {
     public void getError(String progLineCurrent, int lineIndexer, int lineNum) {
         errorTrace("Line "+lineNum+": ","Condition has no effect. This condition always produces the same result as the value of the involved variable\n" +

@@ -1,3 +1,5 @@
+package java;
+
 public class OverCatchingChecker  extends StyleChecker {
     public void getError(String progLineCurrent, int lineIndexer, int lineNum) {
         errorTrace("Line "+lineNum+": ",". Over-catching an exception with system-termination. Developers are over-catching an exception (i.e., catching\n" +
