@@ -32,6 +32,17 @@ public class StringEqualChecker extends BaseChecker {
                         if(!lineCode.contains(code)) lineCode.add(code);
                     }
                 }
+
+                if(bin.getRight() instanceof StringLiteralExpr) {
+                    int code = bin.getBegin().get().line;
+                    if(!lineCode.contains(code)) lineCode.add(code);
+                } else if(bin.getRight() instanceof NameExpr) {
+                    if(checkForStringType((NameExpr) bin.getRight())) {
+                        int code = bin.getBegin().get().line;
+                        if(!lineCode.contains(code)) lineCode.add(code);
+                    }
+                }
+
             }
         }
         for(Integer i: lineCode) {

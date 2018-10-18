@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7e0b4d8-3aed-4e50-95f9-0f69f4edc651" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/checker/StringEqualChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/checker/StringEqualChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/checker/UnfinishedExceptionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/checker/UnfinishedExceptionChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/checker/UnusedChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/checker/UnusedChecker.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -188,8 +187,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/checker/StringEqualChecker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+            <state relative-caret-position="247">
+              <caret line="44" lean-forward="true" selection-start-line="34" selection-end-line="44" />
             </state>
           </provider>
         </entry>
@@ -703,7 +702,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539711609369" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539801547200" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -785,7 +784,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36683000" />
+    <option name="totallyTimeSpent" value="36775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -1061,8 +1060,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/checker/StringEqualChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        <state relative-caret-position="247">
+          <caret line="44" lean-forward="true" selection-start-line="34" selection-end-line="44" />
         </state>
       </provider>
     </entry>
