@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a7e0b4d8-3aed-4e50-95f9-0f69f4edc651" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/checker/StringEqualChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/checker/StringEqualChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/checker/LoopChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/checker/LoopChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/checker/OverCatchExceptionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/checker/OverCatchExceptionChecker.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -166,11 +167,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/checker/LoopChecker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="617">
+              <caret line="120" column="21" lean-forward="true" selection-start-line="18" selection-end-line="120" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -178,13 +179,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/checker/OverCatchExceptionChecker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="190">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="10" selection-end-line="15" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/checker/StringEqualChecker.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
@@ -559,11 +560,11 @@
         <option value="$PROJECT_DIR$/src/main/java/checker/HashChecker.java" />
         <option value="$PROJECT_DIR$/src/main/java/checker/IfChecker.java" />
         <option value="$PROJECT_DIR$/src/main/java/checker/LogInfoChecker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/checker/LoopChecker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/checker/OverCatchExceptionChecker.java" />
         <option value="$PROJECT_DIR$/src/main/java/checker/UnusedChecker.java" />
         <option value="$PROJECT_DIR$/src/main/java/checker/UnfinishedExceptionChecker.java" />
         <option value="$PROJECT_DIR$/src/main/java/checker/StringEqualChecker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/checker/OverCatchExceptionChecker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/checker/LoopChecker.java" />
       </list>
     </option>
   </component>
@@ -702,7 +703,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539801547200" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539828121896" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -784,7 +785,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36775000" />
+    <option name="totallyTimeSpent" value="36809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -1030,20 +1031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/checker/LoopChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/checker/OverCatchExceptionChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/checker/UnusedChecker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1062,6 +1049,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="44" lean-forward="true" selection-start-line="34" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/checker/OverCatchExceptionChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="10" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/checker/LoopChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="120" column="21" lean-forward="true" selection-start-line="18" selection-end-line="120" selection-end-column="21" />
         </state>
       </provider>
     </entry>
