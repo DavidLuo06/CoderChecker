@@ -13,6 +13,12 @@ import java.util.List;
 
 public class LoopChecker extends BaseChecker {
 
+    /**
+     * Check for forStmt and WhileStmt,
+     * first collect all return var name, then recursion for all Method Call Stmt
+     * in the while loopStmt, if there no any var name appearance, show error message
+     * for it.
+     * */
     @Override
     void check() {
 
