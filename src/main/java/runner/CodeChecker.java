@@ -20,8 +20,8 @@ public class CodeChecker {
 
         System.out.println("running Code Checker by javaParser..");
         loopFiles("codeSource/hadoop-branch-3.0.0");
-        //loopFiles("codeSource/cloudstack-4.9");
-        //loopFiles("c2");
+        loopFiles("codeSource/cloudstack-4.9");
+        loopFiles("c2");
         BaseChecker.outputFileReport(outputFileName);
 
 
