@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="codechecker_main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/codechecker_main_jar</output-path>
+    <root id="archive" name="codechecker_main.jar">
+      <element id="module-output" name="codechecker_main" />
+      <element id="extracted-dir" path="D:/cache/.gradle/caches/modules-2/files-2.1/com.github.javaparser/javaparser-core/3.6.24/3cf05842ad1ab0b48bb1cbedb0469fba3ba77976/javaparser-core-3.6.24.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

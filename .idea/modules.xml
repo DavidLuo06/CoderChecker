@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/codechecker_main.iml" filepath="$PROJECT_DIR$/.idea/modules/codechecker_main.iml" group="codechecker" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/codechecker_test.iml" filepath="$PROJECT_DIR$/.idea/modules/codechecker_test.iml" group="codechecker" />
+    </modules>
+  </component>
+</project>

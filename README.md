@@ -1,48 +1,34 @@
-# Code Checker
+# CodeChecker
 > a java code static analysis tools 
 
-- **Build Tools**:    gradle
-- **dependencies**: javaparser / jdt /junit
+- **IDE**: Intellij
+- **Build Tools**:  gradle
+- **dependencies**: javaparser / jdt /junit / spotbugs
 
 ###usage
-```shell
-    gradlew check
-```
+import this project to intellij with gradle format, then just run it
 ###result
-build/reports/spotbugs/main.xml
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-
-<BugCollection version="3.1.7" sequence="0" timestamp="1538930916075" analysisTimestamp="1538930916286" release="">
-  <Project projectName="">..</Project>
-  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
-    <Class classname="Test">
-      <SourceLine classname="Test" start="10" end="100" sourcefile="Test.java" sourcepath="Test.java"/>
-    </Class>
-    <Method classname="Test" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
-      <SourceLine classname="Test" start="16" end="74" startBytecode="0" endBytecode="96" sourcefile="Test.java" sourcepath="Test.java"/>
-    </Method>
-    <LocalVariable name="fileInputStream" register="3" pc="131" role="LOCAL_VARIABLE_NAMED"/>
-    <SourceLine classname="Test" start="58" end="58" startBytecode="181" endBytecode="181" sourcefile="Test.java" sourcepath="Test.java"/>
-    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
-    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
-    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="fileInputStream"/>
-    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.MANY_STORES" value="true"/>
-    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
-  </BugInstance>
-  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE">
-    <Class classname="Test">
-      <SourceLine classname="Test" start="10" end="100" sourcefile="Test.java" sourcepath="Test.java"/>
-    </Class>
-    <Method classname="Test" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
-      <SourceLine classname="Test" start="83" end="83" startBytecode="0" endBytecode="57" sourcefile="Test.java" sourcepath="Test.java"/>
-    </Method>
-  </BugInstance>
- ...
-  <Errors errors="0" missingClasses="0"></Errors>
-  
-  <ClassFeatures></ClassFeatures>
-  <History></History>
-</BugCollection>
-
+main.html or main.xml
+```html
+<p id="N65839" style="display: none;">
+<a href="#NP_CLOSING_NULL">Bug type NP_CLOSING_NULL (click for details)</a>
+<br/>In class testcode.Test<br/>In method testcode.Test.main(String[])<br/>Value loaded from fileInputStream<br/>Dereferenced at Test.java:[line 40]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N65904');">
+<td>
+<span class="priority-2">NP</span>
+</td>
+<td>errorFileInputStream is null guaranteed to be dereferenced in testcode.Test.main(String[]) on exception path</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N65904" style="display: none;">
+<a href="#NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH">Bug type NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH (click for details)</a>
+<br/>In class testcode.Test<br/>In method testcode.Test.main(String[])<br/>Value loaded from errorFileInputStream<br/>Dereferenced at Test.java:[line 45]<br/>Dereferenced at Test.java:[line 45]<br/>Null value at Test.java:[line 36]<br/>Known null at Test.java:[line 38]</p>
+</td>
+</tr>
+</table>
+<h2>
 ```
