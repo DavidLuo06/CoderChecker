@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>SpotBugs Report</title>
+<style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+
+		.tablerow0:hover, .tablerow1:hover {
+			background: #aaffaa;
+		}
+
+		.priority-1 {
+		    color: red;
+		    font-weight: bold;
+		}
+		.priority-2 {
+		    color: orange;
+		    font-weight: bold;
+		}
+		.priority-3 {
+		    color: green;
+		    font-weight: bold;
+		}
+		.priority-4 {
+		    color: blue;
+		    font-weight: bold;
+		}
+		</style>
+<script type="text/javascript">
+			function toggleRow(elid) {
+				if (document.getElementById) {
+					element = document.getElementById(elid);
+					if (element) {
+						if (element.style.display == 'none') {
+							element.style.display = 'block';
+							//window.status = 'Toggle on!';
+						} else {
+							element.style.display = 'none';
+							//window.status = 'Toggle off!';
+						}
+					}
+				}
+			}
+		</script>
+</head>
+<body>
+<h1>
+<a href="https://spotbugs.github.io/">SpotBugs</a> Report</h1>
+<h2>Project Information</h2>
+<p>Project: 
+		</p>
+<p>SpotBugs version: 3.1.7</p>
+<p>Code analyzed:</p>
+<ul>
+<li>D:\ProjectsStorageDir\ProjectActived\codechecker\Test.class</li>
+</ul>
+<p>
+<br/>
+<br/>
+</p>
+<h2>Metrics</h2>
+<p>60 lines of code analyzed,
+	in 1 classes, 
+	in 1 packages.</p>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Metric</th>
+<th align="right">Total</th>
+<th align="right">Density*</th>
+</tr>
+<tr class="tablerow0">
+<td>High Priority Warnings</td>
+<td align="right">4</td>
+<td align="right">66.67</td>
+</tr>
+<tr class="tablerow1">
+<td>Medium Priority Warnings</td>
+<td align="right">3</td>
+<td align="right">50.00</td>
+</tr>
+<tr class="$totalClass">
+<td>
+<b>Total Warnings</b>
+</td>
+<td align="right">
+<b>7</b>
+</td>
+<td align="right">
+<b>116.67</b>
+</td>
+</tr>
+</table>
+<p>
+<i>(* Defects per Thousand lines of non-commenting source statements)</i>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h2>Contents</h2>
+<ul>
+<li>
+<a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</li>
+<li>
+<a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+</li>
+<li>
+<a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</li>
+<li>
+<a href="#Warnings_MT_CORRECTNESS">Multithreaded correctness Warnings</a>
+</li>
+<li>
+<a href="#Warnings_STYLE">Dodgy code Warnings</a>
+</li>
+<li>
+<a href="#Details">Details</a>
+</li>
+</ul>
+<h1>Summary</h1>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Warning Type</th>
+<th align="right">Number</th>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</td>
+<td align="right">1</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+</td>
+<td align="right">2</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</td>
+<td align="right">2</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_MT_CORRECTNESS">Multithreaded correctness Warnings</a>
+</td>
+<td align="right">1</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_STYLE">Dodgy code Warnings</a>
+</td>
+<td align="right">1</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<b>Total</b>
+</td>
+<td align="right">
+<b>7</b>
+</td>
+</tr>
+</table>
+<h1>Warnings</h1>
+<p>Click on a warning row to see full context information.</p>
+<h2>
+<a name="Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="0">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65682');">
+<td>
+<span class="priority-1">HE</span>
+</td>
+<td>testcode.Test defines equals and uses Object.hashCode()</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65682" style="display: none;">
+<a href="#HE_EQUALS_USE_HASHCODE">Bug type HE_EQUALS_USE_HASHCODE (click for details)</a>
+<br/>In class testcode.Test<br/>In method testcode.Test.equals(Object)<br/>At Test.java:[line 116]</p>
+</td>
+</tr>
+</table>
+<h2>
+<a name="Warnings_CORRECTNESS">Correctness Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="0">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65839');">
+<td>
+<span class="priority-1">NP</span>
+</td>
+<td>Can't close fileInputStream since it is always null in testcode.Test.main(String[])</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65839" style="display: none;">
+<a href="#NP_CLOSING_NULL">Bug type NP_CLOSING_NULL (click for details)</a>
+<br/>In class testcode.Test<br/>In method testcode.Test.main(String[])<br/>Value loaded from fileInputStream<br/>Dereferenced at Test.java:[line 40]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N65904');">
+<td>
+<span class="priority-2">NP</span>
+</td>
+<td>errorFileInputStream is null guaranteed to be dereferenced in testcode.Test.main(String[]) on exception path</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N65904" style="display: none;">
+<a href="#NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH">Bug type NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH (click for details)</a>
+<br/>In class testcode.Test<br/>In method testcode.Test.main(String[])<br/>Value loaded from errorFileInputStream<br/>Dereferenced at Test.java:[line 45]<br/>Dereferenced at Test.java:[line 45]<br/>Null value at Test.java:[line 36]<br/>Known null at Test.java:[line 38]</p>
+</td>
+</tr>
+</table>
+<h2>
+<a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="0">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65735');">
+<td>
+<span class="priority-1">MS</span>
+</td>
+<td>testcode.Test.dNow isn't final but should be</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65735" style="display: none;">
+<a href="#MS_SHOULD_BE_FINAL">Bug type MS_SHOULD_BE_FINAL (click for details)</a>
+<br/>In class testcode.Test<br/>Field testcode.Test.dNow<br/>At Test.java:[line 14]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N65787');">
+<td>
+<span class="priority-1">MS</span>
+</td>
+<td>testcode.Test.ft isn't final but should be</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N65787" style="display: none;">
+<a href="#MS_SHOULD_BE_FINAL">Bug type MS_SHOULD_BE_FINAL (click for details)</a>
+<br/>In class testcode.Test<br/>Field testcode.Test.ft<br/>At Test.java:[line 15]</p>
+</td>
+</tr>
+</table>
+<h2>
+<a name="Warnings_MT_CORRECTNESS">Multithreaded correctness Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="0">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66005');">
+<td>
+<span class="priority-2">STCAL</span>
+</td>
+<td>testcode.Test.ft is a static field of type java.text.DateFormat, which isn't thread safe</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66005" style="display: none;">
+<a href="#STCAL_STATIC_SIMPLE_DATE_FORMAT_INSTANCE">Bug type STCAL_STATIC_SIMPLE_DATE_FORMAT_INSTANCE (click for details)</a>
+<br/>In class testcode.Test<br/>Field testcode.Test.ft<br/>In Test.java</p>
+</td>
+</tr>
+</table>
+<h2>
+<a name="Warnings_STYLE">Dodgy code Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="0">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65606');">
+<td>
+<span class="priority-2">DLS</span>
+</td>
+<td>Dead store to fileInputStream in testcode.Test.main(String[])</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65606" style="display: none;">
+<a href="#DLS_DEAD_LOCAL_STORE">Bug type DLS_DEAD_LOCAL_STORE (click for details)</a>
+<br/>In class testcode.Test<br/>In method testcode.Test.main(String[])<br/>Local variable named fileInputStream<br/>At Test.java:[line 101]</p>
+</td>
+</tr>
+</table>
+<h1>
+<a name="Details">Details</a>
+</h1>
+<h2>
+<a name="DLS_DEAD_LOCAL_STORE">DLS_DEAD_LOCAL_STORE: Dead store to local variable</a>
+</h2>
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because SpotBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    
+<h2>
+<a name="HE_EQUALS_USE_HASHCODE">HE_EQUALS_USE_HASHCODE: Class defines equals() and uses Object.hashCode()</a>
+</h2>
+
+  <p> This class overrides <code>equals(Object)</code>, but does not
+  override <code>hashCode()</code>, and inherits the implementation of
+  <code>hashCode()</code> from <code>java.lang.Object</code> (which returns
+  the identity hash code, an arbitrary value assigned to the object
+  by the VM).&nbsp; Therefore, the class is very likely to violate the
+  invariant that equal objects must have equal hashcodes.</p>
+
+<p>If you don't think instances of this class will ever be inserted into a HashMap/HashTable,
+the recommended <code>hashCode</code> implementation to use is:</p>
+<pre><code>public int hashCode() {
+    assert false : "hashCode not designed";
+    return 42; // any arbitrary constant will do
+}
+</code></pre>
+
+    
+<h2>
+<a name="MS_SHOULD_BE_FINAL">MS_SHOULD_BE_FINAL: Field isn't final but should be</a>
+</h2>
+
+   <p>
+This static field public but not final, and
+could be changed by malicious code or
+        by accident from another package.
+        The field could be made final to avoid
+        this vulnerability.</p>
+
+    
+<h2>
+<a name="NP_CLOSING_NULL">NP_CLOSING_NULL: close() invoked on a value that is always null</a>
+</h2>
+
+<p> close() is being invoked on a value that is always null. If this statement is executed,
+a null pointer exception will occur. But the big risk here you never close
+something that should be closed.
+
+    
+<h2>
+<a name="NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH">NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH: Value is null and guaranteed to be dereferenced on exception path</a>
+</h2>
+          
+              <p>
+              There is a statement or branch on an exception path
+                that if executed guarantees that
+              a value is null at this point, and that
+              value that is guaranteed to be dereferenced
+              (except on forward paths involving runtime exceptions).
+              </p>
+          
+      
+<h2>
+<a name="STCAL_STATIC_SIMPLE_DATE_FORMAT_INSTANCE">STCAL_STATIC_SIMPLE_DATE_FORMAT_INSTANCE: Static DateFormat</a>
+</h2>
+
+<p>As the JavaDoc states, DateFormats are inherently unsafe for multithreaded use.
+Sharing a single instance across thread boundaries without proper synchronization will result in erratic behavior of the
+application.</p>
+<p>You may also experience serialization problems.</p>
+<p>Using an instance field is recommended.</p>
+<p>For more information on this see <a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6231579">JDK Bug #6231579</a>
+and <a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6178997">JDK Bug #6178997</a>.</p>
+
+</body>
+</html>
